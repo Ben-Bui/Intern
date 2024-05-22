@@ -50,6 +50,18 @@ document.getElementById('translateBtn').addEventListener('click', function() {
                 case 'Apply':
                     element.textContent = 'Đăng Ký';
                     break;
+                case 'address':
+                    element.textContent = 'Address: 1019 South 8th Street Philadelphia, PA 19147';
+                    break;
+                case 'contact':
+                    element.textContent = 'Contact: Mary Phan RN, BSN (Nurse)';
+                    break;
+                case 'phone':
+                    element.textContent = 'Phone: (215) 900-5880';
+                    break;
+                case 'email':
+                    element.innerHTML = 'Email: <a href="mailto:marykphan@gmail.com" style="color: white;">marykphan@gmail.com</a>';
+                    break;
                 default:
                     element.textContent = element.textContent; // No change
             }
@@ -99,6 +111,18 @@ document.getElementById('translateBtn').addEventListener('click', function() {
                     break;
                 case 'Đăng Ký':
                     element.textContent = 'Apply';
+                    break;
+                case 'address':
+                    element.textContent = 'Địa chỉ: 1019 South 8th Street Philadelphia, PA 19147';
+                    break;
+                case 'contact':
+                    element.textContent = 'Liên hệ: Mary Phan RN, BSN (Nurse)';
+                    break;
+                case 'phone':
+                    element.textContent = 'Điện thoại: (215) 900-5880';
+                    break;
+                case 'email':
+                    element.innerHTML = 'Email: <a href="mailto:marykphan@gmail.com" style="color: white;">marykphan@gmail.com</a>';
                     break;
                 default:
                     element.textContent = element.textContent; // No change

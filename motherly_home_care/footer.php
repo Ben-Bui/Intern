@@ -6,4 +6,3 @@
         <p>Email: <a href="mailto:marykphan@gmail.com" style="color: white;">marykphan@gmail.com</a></p>
     </div>
 </footer>
-<script src="js/translation.js"></script>

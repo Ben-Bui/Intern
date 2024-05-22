@@ -11,3 +11,4 @@
         <button type="submit">Send Message</button>
     </form>
 </main>
+<?php include('footer.php'); ?>

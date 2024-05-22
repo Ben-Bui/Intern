@@ -6,16 +6,32 @@ body {
     background-color: #fff;
     color: #4b0082; /* Dark purple color */
 }
+.contact-info{
+    color: white;
+}
 .hero {
-    background-color: rgba(75, 0, 130, 0.5); /* Solid purple with 50% opacity */
+    background-color: #fff; /* White background */
     padding: 20px;
     margin: 20px auto;
     max-width: 600px; /* Adjust as needed */
+    border: 2px solid #4b0082; /* Purple border */
     border-radius: 10px; /* Rounded corners */
 }
 
+/* Adjust h1 color to match the rest */
 .hero h1 {
+    color: #4b0082; /* Dark purple color */
+}
+/* Footer styling */
+footer {
+    background-color: #4b0082; /* Purple background */
     color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-content p {
+    margin: 5px 0;
 }
 
 header {

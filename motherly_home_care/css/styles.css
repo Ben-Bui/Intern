@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #4b0082; /* Dark purple color */
+}
+
+header {
+    background-color: #4b0082; /* Dark purple color */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form label {
+    margin-top: 10px;
+    color: #4b0082; /* Dark purple color */
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #4b0082; /* Dark purple color */
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4b0082; /* Dark purple color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3a0068; /* Darker purple color */
+}
+
+#translateBtn {
+    margin-top: 10px;
+    background-color: #4b0082; /* Dark purple color */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#translateBtn:hover {
+    background-color: #3a0068; /* Darker purple color */
+}

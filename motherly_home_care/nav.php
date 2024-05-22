@@ -17,7 +17,7 @@
                 <li><a href="apply.php">Apply for Service</a></li>
             </ul>
         </nav>
-        <button id="translateBtn">Translate</button>
+        <button id="translateBtn" data-language="en">Translate</button>
     </header>
     <script src="js/script.js"></script>
 </body>

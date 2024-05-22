@@ -19,5 +19,6 @@
         </nav>
         <button id="translateBtn" data-language="en">Tiếng Việt</button>
     </header>
+    <script src="js/translation.js"></script>
 </body>
 </html>

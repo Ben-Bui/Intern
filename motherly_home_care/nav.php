@@ -17,12 +17,6 @@
                 <li><a href="apply.php">Apply for Service</a></li>
             </ul>
         </nav>
-        <div class="contact-info">
-            <p>Address: 1019 South 8th Street Philadelphia, PA 19147</p>
-            <p>Person to contact: Mary Phan RN, BSN (Nurse)</p>
-            <p>Phone: (215) 900-5880</p>
-            <p>Email: <a href="mailto:marykphan@gmail.com">marykphan@gmail.com</a></p>
-        </div>
         <button id="translateBtn" data-language="en">Tiếng Việt</button>
     </header>
     <script src="js/translation.js"></script>

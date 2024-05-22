@@ -6,6 +6,17 @@ body {
     background-color: #fff;
     color: #4b0082; /* Dark purple color */
 }
+.hero {
+    background-color: rgba(75, 0, 130, 0.5); /* Solid purple with 50% opacity */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px; /* Adjust as needed */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.hero h1 {
+    color: #fff; /* White text color */
+}
 
 header {
     background-color: #4b0082; /* Dark purple color */

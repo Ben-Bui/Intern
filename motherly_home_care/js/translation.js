@@ -88,7 +88,7 @@ document.getElementById('translateBtn').addEventListener('click', function() {
             }
         }
     });
-
+    
     // Toggle the language data attribute and button text
     if (currentLanguage === 'en') {
         this.setAttribute('data-language', 'vi');

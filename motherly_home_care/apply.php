@@ -11,3 +11,4 @@
         <button type="submit">Apply</button>
     </form>
 </main>
+<?php include('footer.php'); ?>

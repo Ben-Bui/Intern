@@ -1,116 +1,34 @@
 document.getElementById('translateBtn').addEventListener('click', function() {
-    const elementsToTranslate = document.querySelectorAll('main h1, main h2, main p, form label, form button');
+    const elementsToTranslate = document.querySelectorAll('[data-translate]');
     const currentLanguage = this.getAttribute('data-language');
     
     elementsToTranslate.forEach(element => {
+        const key = element.getAttribute('data-translate');
         if (currentLanguage === 'en') {
-            switch (element.textContent.trim()) {
-                case 'Welcome to Motherly Home Care':
-                    element.textContent = 'Chào mừng đến với Motherly Home Care';
+            switch (key) {
+                case 'welcome':
+                    element.innerHTML = 'Chào mừng đến với Motherly <br> Home Care';
                     break;
-                case 'When it\'s family...':
+                case 'tagline':
                     element.textContent = 'Khi là gia đình...';
                     break;
-                case 'Motherly is a home health care agency for adults and seniors living in the Philadelphia area. We offer companionship service and assistance with activities of daily living. This includes dressing, bathing, meal preparation, medication reminders, and many other household tasks as well as other services personally tailored for your care.':
+                case 'description':
                     element.textContent = 'Motherly là một cơ quan chăm sóc sức khỏe tại nhà cho người lớn và người cao tuổi sống ở khu vực Philadelphia. Chúng tôi cung cấp dịch vụ bầu bạn và hỗ trợ các hoạt động sinh hoạt hàng ngày. Điều này bao gồm mặc quần áo, tắm rửa, chuẩn bị bữa ăn, nhắc nhở dùng thuốc và nhiều công việc gia đình khác cũng như các dịch vụ khác được cá nhân hóa cho sự chăm sóc của bạn.';
                     break;
-                case 'About Us':
+                case 'everydayNeeds':
+                    element.textContent = 'Cho nhu cầu hàng ngày của bạn trong sự thoải mái của ngôi nhà của bạn, chúng tôi ở đây cho bạn.';
+                    break;
+                case 'additionalDescription':
+                    element.innerHTML = 'Motherly là một cơ quan chăm sóc sức khỏe tại nhà cho người lớn và người cao tuổi sống ở khu vực Philadelphia. Chúng tôi cung cấp dịch vụ bầu bạn và hỗ trợ các hoạt động sinh hoạt hàng ngày. Điều này bao gồm mặc quần áo, tắm rửa, chuẩn bị bữa ăn, nhắc nhở dùng thuốc và nhiều công việc gia đình khác & việc vặt. Xem danh sách đầy đủ các dịch vụ của chúng tôi.<br>Tại Motherly Home Care, an toàn & sự hài lòng là trên hết. Chúng tôi dành thời gian thêm để đảm bảo tất cả các nhu cầu của bạn được đáp ứng, và chúng tôi đi trên & hơn thế nữa để bạn có thể tận hưởng cuộc sống mà bạn xứng đáng có. Bạn sẽ luôn được đối xử như gia đình ở đây tại Motherly Home Care.';
+                    break;
+                case 'aboutTitle':
                     element.textContent = 'Về Chúng Tôi';
                     break;
-                case 'We are a dedicated team providing home care services with a personal touch.':
-                    element.textContent = 'Chúng tôi là một đội ngũ tận tâm cung cấp dịch vụ chăm sóc tại nhà với sự quan tâm cá nhân.';
+                case 'ourMission':
+                    element.textContent = 'Sứ Mệnh Của Chúng Tôi';
                     break;
-                case 'Our Services':
-                    element.textContent = 'Dịch Vụ Của Chúng Tôi';
-                    break;
-                case 'Explore the wide range of home care services we offer to make your life easier.':
-                    element.textContent = 'Khám phá các dịch vụ chăm sóc tại nhà mà chúng tôi cung cấp để làm cho cuộc sống của bạn dễ dàng hơn.';
-                    break;
-                case 'Contact Us':
-                    element.textContent = 'Liên Hệ Chúng Tôi';
-                    break;
-                case 'Name:':
-                    element.textContent = 'Tên:';
-                    break;
-                case 'Email:':
-                    element.textContent = 'Email:';
-                    break;
-                case 'Message:':
-                    element.textContent = 'Tin nhắn:';
-                    break;
-                case 'Send Message':
-                    element.textContent = 'Gửi Tin Nhắn';
-                    break;
-                case 'Apply for Service':
-                    element.textContent = 'Đăng Ký Dịch Vụ';
-                    break;
-                case 'Service Needed:':
-                    element.textContent = 'Dịch vụ cần thiết:';
-                    break;
-                case 'Apply':
-                    element.textContent = 'Đăng Ký';
-                    break;
-                case 'address':
-                    element.textContent = 'Address: 1019 South 8th Street Philadelphia, PA 19147';
-                    break;
-                case 'contact':
-                    element.textContent = 'Contact: Mary Phan RN, BSN (Nurse)';
-                    break;
-                case 'phone':
-                    element.textContent = 'Phone: (215) 900-5880';
-                    break;
-                case 'email':
-                    element.innerHTML = 'Email: <a href="mailto:marykphan@gmail.com" style="color: white;">marykphan@gmail.com</a>';
-                    break;
-                default:
-                    element.textContent = element.textContent; // No change
-            }
-        } else {
-            switch (element.textContent.trim()) {
-                case 'Chào mừng đến với Motherly Home Care':
-                    element.textContent = 'Welcome to Motherly Home Care';
-                    break;
-                case 'Khi là gia đình...':
-                    element.textContent = 'When it\'s family...';
-                    break;
-                case 'Motherly là một cơ quan chăm sóc sức khỏe tại nhà cho người lớn và người cao tuổi sống ở khu vực Philadelphia. Chúng tôi cung cấp dịch vụ bầu bạn và hỗ trợ các hoạt động sinh hoạt hàng ngày. Điều này bao gồm mặc quần áo, tắm rửa, chuẩn bị bữa ăn, nhắc nhở dùng thuốc và nhiều công việc gia đình khác cũng như các dịch vụ khác được cá nhân hóa cho sự chăm sóc của bạn.':
-                    element.textContent = 'Motherly is a home health care agency for adults and seniors living in the Philadelphia area. We offer companionship service and assistance with activities of daily living. This includes dressing, bathing, meal preparation, medication reminders, and many other household tasks as well as other services personally tailored for your care.';
-                    break;
-                case 'Về Chúng Tôi':
-                    element.textContent = 'About Us';
-                    break;
-                case 'Chúng tôi là một đội ngũ tận tâm cung cấp dịch vụ chăm sóc tại nhà với sự quan tâm cá nhân.':
-                    element.textContent = 'We are a dedicated team providing home care services with a personal touch.';
-                    break;
-                case 'Dịch Vụ Của Chúng Tôi':
-                    element.textContent = 'Our Services';
-                    break;
-                case 'Khám phá các dịch vụ chăm sóc tại nhà mà chúng tôi cung cấp để làm cho cuộc sống của bạn dễ dàng hơn.':
-                    element.textContent = 'Explore the wide range of home care services we offer to make your life easier.';
-                    break;
-                case 'Liên Hệ Chúng Tôi':
-                    element.textContent = 'Contact Us';
-                    break;
-                case 'Tên:':
-                    element.textContent = 'Name:';
-                    break;
-                case 'Email:':
-                    element.textContent = 'Email:';
-                    break;
-                case 'Tin nhắn:':
-                    element.textContent = 'Message:';
-                    break;
-                case 'Gửi Tin Nhắn':
-                    element.textContent = 'Send Message';
-                    break;
-                case 'Đăng Ký Dịch Vụ':
-                    element.textContent = 'Apply for Service';
-                    break;
-                case 'Dịch vụ cần thiết:':
-                    element.textContent = 'Service Needed:';
-                    break;
-                case 'Đăng Ký':
-                    element.textContent = 'Apply';
+                case 'missionDescription':
+                    element.textContent = 'Sự an toàn và chăm sóc chất lượng của bạn là sứ mệnh của chúng tôi. Cung cấp cho khách hàng của chúng tôi những lựa chọn chăm sóc sức khỏe tốt nhất, chúng tôi cố gắng làm cho chất lượng cuộc sống trở nên phong phú hơn, khỏe mạnh hơn và hạnh phúc hơn.';
                     break;
                 case 'address':
                     element.textContent = 'Địa chỉ: 1019 South 8th Street Philadelphia, PA 19147';
@@ -120,6 +38,47 @@ document.getElementById('translateBtn').addEventListener('click', function() {
                     break;
                 case 'phone':
                     element.textContent = 'Điện thoại: (215) 900-5880';
+                    break;
+                case 'email':
+                    element.innerHTML = 'Email: <a href="mailto:marykphan@gmail.com" style="color: white;">marykphan@gmail.com</a>';
+                    break;
+                default:
+                    element.textContent = element.textContent; // No change
+            }
+        } else {
+            switch (key) {
+                case 'welcome':
+                    element.innerHTML = 'Motherly <br> Home Care';
+                    break;
+                case 'tagline':
+                    element.textContent = 'When it\'s family...';
+                    break;
+                case 'description':
+                    element.textContent = 'Motherly is a home health care agency for adults and seniors living in the Philadelphia area. We offer companionship service and assistance with activities of daily living. This includes dressing, bathing, meal preparation, medication reminders, and many other household tasks as well as other services personally tailored for your care.';
+                    break;
+                case 'everydayNeeds':
+                    element.textContent = 'For your everyday needs in the comfort of your home, we are here for you.';
+                    break;
+                case 'additionalDescription':
+                    element.innerHTML = 'Motherly is a home health care agency for adults and seniors living in the Philadelphia area. We offer companionship service and assistance with activities of daily living. This includes dressing, bathing, meal preparation, medication reminders, and many other household tasks & errands. Take a look at our full list of Services.<br>At Motherly Home Care, safety & satisfaction come first. We take the extra time to ensure all of your needs are met, and we go above & beyond so you can enjoy the life you deserve. You\'ll always be treated like family here at Motherly Home Care.';
+                    break;
+                case 'aboutTitle':
+                    element.textContent = 'About Us';
+                    break;
+                case 'ourMission':
+                    element.textContent = 'Our Mission';
+                    break;
+                case 'missionDescription':
+                    element.textContent = 'Your safety and quality care is our mission. Providing our clients with the best health options, we strive to make the quality of life richer, healthier, and happier.';
+                    break;
+                case 'address':
+                    element.textContent = 'Address: 1019 South 8th Street Philadelphia, PA 19147';
+                    break;
+                case 'contact':
+                    element.textContent = 'Contact: Mary Phan RN, BSN (Nurse)';
+                    break;
+                case 'phone':
+                    element.textContent = 'Phone: (215) 900-5880';
                     break;
                 case 'email':
                     element.innerHTML = 'Email: <a href="mailto:marykphan@gmail.com" style="color: white;">marykphan@gmail.com</a>';

@@ -22,6 +22,12 @@ document.getElementById('translateBtn').addEventListener('click', function() {
             case 'Your safety and quality care is our mission. Providing our clients with the best health options, we strive to make the quality of life richer, healthier, and happier.':
                 element.textContent = 'An toàn và chất lượng chăm sóc của bạn là nhiệm vụ của chúng tôi. Cung cấp cho khách hàng của chúng tôi các lựa chọn sức khỏe tốt nhất, chúng tôi cố gắng làm cho chất lượng cuộc sống của bạn giàu có, khỏe mạnh và hạnh phúc hơn.';
                 break;                
+            case 'our-mission':
+                element.textContent = 'Nhiệm Vụ Của Chúng Tôi';
+                break;
+            case 'mission-content':
+                element.textContent = 'An toàn và chất lượng chăm sóc của bạn là nhiệm vụ của chúng tôi...';
+                break;
             case 'Our Services':
                 element.textContent = 'Dịch Vụ Của Chúng Tôi';
                 break;

@@ -20,5 +20,6 @@
         <button id="translateBtn" data-language="en">Tiếng Việt</button>
     </header>
     <script src="js/translation.js"></script>
+    <script src="js/hide.js"></script>
 </body>
 </html>

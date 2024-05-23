@@ -12,13 +12,16 @@ document.getElementById('translateBtn').addEventListener('click', function() {
                     element.textContent = 'Khi là gia đình...';
                     break;
                 case 'Motherly is a home health care agency for adults and seniors living in the Philadelphia area. We offer companionship service and assistance with activities of daily living. This includes dressing, bathing, meal preparation, medication reminders, and many other household tasks as well as other services personally tailored for your care.':
-                    element.textContent = 'Motherly là một cơ quan chăm sóc sức khỏe tại nhà cho người lớn và người cao tuổi sống ở khu vực Philadelphia. Chúng tôi cung cấp dịch vụ bầu bạn và hỗ trợ các hoạt động sinh hoạt hàng ngày. Điều này bao gồm mặc quần áo, tắm rửa, chuẩn bị bữa ăn, nhắc nhở dùng thuốc và nhiều công việc gia đình khác cũng như các dịch vụ khác được cá nhân hóa cho sự chăm sóc của bạn.';
+                    element.textContent = 'Motherly Home Care là dịch vụ chăm sóc sức khỏe tại nhà cho người lớn và người cao niên sống trong khu vực Philadelphia.';
                     break;
                 case 'About Us':
                     element.textContent = 'Về Chúng Tôi';
                     break;
-                case 'We are a dedicated team providing home care services with a personal touch.':
-                    element.textContent = 'Chúng tôi là một đội ngũ tận tâm cung cấp dịch vụ chăm sóc tại nhà với sự quan tâm cá nhân.';
+                case 'Our Mission':
+                    element.textContent = 'Nhiệm Vụ Của Chúng Tôi';
+                    break;
+                case 'Your safety and quality care is our mission. Providing our clients with the best health options, we strive to make the quality of life richer, healthier, and happier.':
+                    element.textContent = 'Chúng tôi hứa sẽ chăm sóc bạn, người bệnh của gia đình bạn, cũng như chính chúng tôi đang chăm sóc cho người thân của mình với lòng kiên nhẫn, thấu hiểu và tôn trọng.';
                     break;
                 case 'Our Services':
                     element.textContent = 'Dịch Vụ Của Chúng Tôi';
@@ -79,8 +82,11 @@ document.getElementById('translateBtn').addEventListener('click', function() {
                 case 'Về Chúng Tôi':
                     element.textContent = 'About Us';
                     break;
-                case 'Chúng tôi là một đội ngũ tận tâm cung cấp dịch vụ chăm sóc tại nhà với sự quan tâm cá nhân.':
-                    element.textContent = 'We are a dedicated team providing home care services with a personal touch.';
+                case 'Nhiệm Vụ Của Chúng Tôi':
+                    element.textContent = 'Our Mission';
+                    break;
+                case 'Chúng tôi hứa sẽ chăm sóc bạn, người bệnh của gia đình bạn, cũng như chính chúng tôi đang chăm sóc cho người thân của mình với lòng kiên nhẫn, thấu hiểu và tôn trọng.':
+                    element.textContent = 'Your safety and quality care is our mission. Providing our clients with the best health options, we strive to make the quality of life richer, healthier, and happier.';
                     break;
                 case 'Dịch Vụ Của Chúng Tôi':
                     element.textContent = 'Our Services';

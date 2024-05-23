@@ -1,5 +1,5 @@
 document.getElementById('translateBtn').addEventListener('click', function() {
-    const elementsToTranslate = document.querySelectorAll('h1, h2, h3, p');
+    const elementsToTranslate = document.querySelectorAll('h1, h2, h3, main p');
     const currentLanguage = this.getAttribute('data-language');
     
     elementsToTranslate.forEach(element => {
@@ -21,7 +21,7 @@ document.getElementById('translateBtn').addEventListener('click', function() {
                 break;
             case 'Your safety and quality care is our mission. Providing our clients with the best health options, we strive to make the quality of life richer, healthier, and happier.':
                 element.textContent = 'An toàn và chất lượng chăm sóc của bạn là nhiệm vụ của chúng tôi. Cung cấp cho khách hàng của chúng tôi các lựa chọn sức khỏe tốt nhất, chúng tôi cố gắng làm cho chất lượng cuộc sống của bạn giàu có, khỏe mạnh và hạnh phúc hơn.';
-                break;                    
+                break;                
             case 'Our Services':
                 element.textContent = 'Dịch Vụ Của Chúng Tôi';
                 break;

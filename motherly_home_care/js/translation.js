@@ -1,5 +1,5 @@
 document.getElementById('translateBtn').addEventListener('click', function() {
-    const elementsToTranslate = document.querySelectorAll('main h1, main h2, main h3, main p');
+    const elementsToTranslate = document.querySelectorAll('h1, h2, h3, p');
     const currentLanguage = this.getAttribute('data-language');
     
     elementsToTranslate.forEach(element => {

@@ -1,14 +1,14 @@
 document.getElementById('translateBtn').addEventListener('click', function() {
-    const englishContentMain = document.getElementById('englishContent');
-    const vietnameseContentMain = document.getElementById('vietnameseContent');
+    const englishContent = document.getElementById('englishContent');
+    const vietnameseContent = document.getElementById('vietnameseContent');
     const englishContentFooter = document.getElementById('englishContentFooter');
     const vietnameseContentFooter = document.getElementById('vietnameseContentFooter');
     const englishNav = document.getElementById('englishNav');
     const vietnameseNav = document.getElementById('vietnameseNav');
 
     // Toggle main content
-    toggleContent(englishContentMain);
-    toggleContent(vietnameseContentMain);
+    toggleContent(englishContent);
+    toggleContent(vietnameseContent);
 
     // Toggle footer content
     toggleContent(englishContentFooter);

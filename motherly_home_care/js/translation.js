@@ -20,7 +20,7 @@ document.getElementById('translateBtn').addEventListener('click', function() {
 
     // Toggle button text
     this.textContent = (this.textContent === 'Tiếng Việt') ? 'English' : 'Tiếng Việt';
-
+    
     // Toggle service-specific content
     toggleServiceContent();
 });
@@ -28,7 +28,7 @@ document.getElementById('translateBtn').addEventListener('click', function() {
 function toggleContent(element) {
     if (element.style.display === 'block' || element.style.display === '') {
         element.style.display = 'none';
-    } else if (element.style.display === 'none') {
+    } else {
         element.style.display = 'block';
     }
 }

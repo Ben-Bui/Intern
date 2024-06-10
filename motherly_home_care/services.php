@@ -1,7 +1,7 @@
 <?php include('nav.php'); ?>
 
 <main>
-<div id="englishContent">
+    <div id="englishContent">
         <h1>Our Services</h1>
         <p>We promise to care for you as any mother would care for her own: patience, kindness, and respect are our priorities. We aim to help ease the burden of personal care tasks & household chores in order for our clients to maintain independence in the comfort of home. By eliminating these daily challenges, our clients are able to spend more time on the activities that bring them joy and purpose. We believe that a great relationship begins with taking time to get to know each other. That's why we ask our clients about daily habits, interests, spoken languages, and cultural traditions before we match them with one of our caregivers.</p>
     </div>
@@ -11,6 +11,5 @@
     </div>
 </main>
 
-
 <?php include('footer.php'); ?>
-<script src="js/hide.js"></script>
+<script src="js/translation.js"></script>

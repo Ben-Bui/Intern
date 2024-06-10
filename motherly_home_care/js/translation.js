@@ -28,10 +28,11 @@ document.getElementById('translateBtn').addEventListener('click', function() {
 function toggleContent(element) {
     if (element.style.display === 'block' || element.style.display === '') {
         element.style.display = 'none';
-    } else {
+    } else if (element.style.display === 'none') {
         element.style.display = 'block';
     }
 }
+
 
 function toggleServiceContent() {
     const englishServiceContent = document.getElementById('englishServiceContent');

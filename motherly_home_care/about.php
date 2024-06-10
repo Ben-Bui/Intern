@@ -8,7 +8,8 @@
     <div id="vietnameseContent" style="display: none;">
         <h1>Về Chúng Tôi</h1>
         <h2>Nhiệm Vụ Của Chúng Tôi</h2>
-        <p>An toàn và chất lượng chăm sóc của bạn là nhiệm vụ của chúng tôi. Cung cấp cho khách hàng của chúng tôi các lựa chọn sức khỏe tốt nhất, chúng tôi cố gắng làm cho chất lượng cuộc sống của bạn giàu có, khỏe mạnh và hạnh phúc hơn.</p>
+        <p>Chúng tôi hứa sẽ chăm sóc bạn, người bệnh của gia đình bạn, cũng như chính chúng tôi đang chăm sóc cho người thân của mình với lòng kiên nhẫn, thấu hiểu và tôn trọng.
+</p>
     </div>
 </main>
 

@@ -104,3 +104,81 @@ form button:hover {
 #translateBtn:hover {
     background-color: #3a0068; /* Darker purple color */
 }
+
+@media (max-width: 768px) {
+    .hero {
+        max-width: 90%; /* Adjust width for tablets */
+    }
+    nav ul li {
+        margin: 5px 10px; /* Adjust margins for smaller screens */
+    }
+    form input, form textarea {
+        max-width: 90%; /* Adjust form width for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        max-width: 95%; /* Adjust width for phones */
+    }
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically on phones */
+    }
+    nav ul li {
+        margin: 10px 0; /* Adjust margins for vertical nav items */
+    }
+    form input, form textarea {
+        max-width: 95%; /* Adjust form width for phones */
+    }
+    #translateBtn {
+        width: 100%; /* Full-width button on phones */
+        max-width: 95%;
+    }
+}
+/* Contact Page */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contact-info, .contact-form {
+    width: 45%;
+}
+
+.contact-info h2, .contact-form h2 {
+    color: #4b0082; /* Dark purple color */
+}
+
+.contact-info p, .contact-form label {
+    color: #4b0082; /* Dark purple color */
+}
+
+.contact-info a {
+    color: #4b0082;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #4b0082;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4b0082;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #3a0068;
+}

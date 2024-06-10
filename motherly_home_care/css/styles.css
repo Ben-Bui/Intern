@@ -14,7 +14,6 @@ body {
     border: 2px solid #4b0082; /* Purple border */
     border-radius: 10px; /* Rounded corners */
 }
-
 /* Adjust h1 color to match the rest */
 .hero h1 {
     color: #4b0082; /* Dark purple color */
@@ -26,51 +25,53 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
-
 .footer-content p {
     margin: 5px 0;
 }
-
 header {
     background-color: #4b0082; /* Dark purple color */
     padding: 10px 0;
 }
-
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly; /* Space out items evenly */
+    align-items: center; /* Align items vertically center */
 }
-
 nav ul li {
-    margin: 0 15px;
+    position: relative;
+    margin: 0;
+    padding: 0 15px;
 }
-
+nav ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 100%;
+    border-right: 1px solid #fff; /* White line between items */
+}
 nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    padding: 10px 0; /* Add padding to increase click area */
 }
-
 main {
     padding: 20px;
     text-align: center;
 }
-
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
 }
-
 form label {
     margin-top: 10px;
     color: #4b0082; /* Dark purple color */
 }
-
 form input, form textarea {
     width: 100%;
     max-width: 400px;
@@ -78,7 +79,6 @@ form input, form textarea {
     margin-top: 5px;
     border: 1px solid #4b0082; /* Dark purple color */
 }
-
 form button {
     margin-top: 15px;
     padding: 10px 20px;
@@ -87,11 +87,9 @@ form button {
     border: none;
     cursor: pointer;
 }
-
 form button:hover {
     background-color: #3a0068; /* Darker purple color */
 }
-
 #translateBtn {
     margin-top: 10px;
     background-color: #4b0082; /* Dark purple color */
@@ -100,10 +98,32 @@ form button:hover {
     padding: 10px;
     cursor: pointer;
 }
-
 #translateBtn:hover {
     background-color: #3a0068; /* Darker purple color */
 }
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+.contact-info, .contact-form {
+    width: 45%; /* Adjust the width as needed */
+    margin: 10px;
+}
+.contact-info h2, .contact-form h2 {
+    color: #4b0082; /* Dark purple color */
+}
+.contact-form label {
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+}
+
 
 @media (max-width: 768px) {
     .hero {
@@ -134,51 +154,4 @@ form button:hover {
         width: 100%; /* Full-width button on phones */
         max-width: 95%;
     }
-}
-/* Contact Page */
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.contact-info, .contact-form {
-    width: 45%;
-}
-
-.contact-info h2, .contact-form h2 {
-    color: #4b0082; /* Dark purple color */
-}
-
-.contact-info p, .contact-form label {
-    color: #4b0082; /* Dark purple color */
-}
-
-.contact-info a {
-    color: #4b0082;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #4b0082;
-}
-
-.contact-form button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #4b0082;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #3a0068;
 }

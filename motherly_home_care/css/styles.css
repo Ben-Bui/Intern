@@ -3,15 +3,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    color: #4b0082; /* Dark purple color */
+    background-color: #2a0134; /* Very dark purple background */
+    color: #fff; /* White text color */
+}
+h1, h2 {
+    color: #6b3e8e; /* Light purple for h1 and h2 */
 }
 .hero {
-    background-color: #fff; /* White background */
+    background-color: #2a0134; /* Very dark purple background */
     padding: 20px;
     margin: 20px auto;
     max-width: 600px; /* Adjust as needed */
-    border: 2px solid #4b0082; /* Purple border */
+    border: 2px solid #6b3e8e; /* Light purple border */
     border-radius: 10px; /* Rounded corners */
 }
 /* Adjust h1 color to match the rest */

@@ -11,18 +11,18 @@
         <nav>
             <ul>
                 <li id="englishContentNav">
-                    <a href="index.php">Home</a>
-                    <a href="about.php">About</a>
-                    <a href="services.php">Services</a>
-                    <a href="contact.php">Contact Us</a>
-                    <a href="apply.php">Apply for Service</a>
+                    <a href="index.php">| Home |</a>
+                    <a href="about.php">| About |</a>
+                    <a href="services.php">| Services| </a>
+                    <a href="contact.php">| Contact Us |</a>
+                    <a href="apply.php">| Apply for Service |</a>
                 </li>
                 <li id="vietnameseContentNav" style="display: none;">
-                    <a href="index.php">Trang Chủ</a>
-                    <a href="about.php">Về Chúng Tôi</a>
-                    <a href="services.php">Dịch Vụ</a>
-                    <a href="contact.php">Liên Hệ</a>
-                    <a href="apply.php">Đăng Ký Dịch Vụ</a>
+                    <a href="index.php">| Trang Chủ |</a>
+                    <a href="about.php">| Về Chúng Tôi |</a>
+                    <a href="services.php">| Dịch Vụ |</a>
+                    <a href="contact.php">| Liên Hệ |</a>
+                    <a href="apply.php">| Đăng Ký Dịch Vụ |</a>
                 </li>
             </ul>
         </nav>

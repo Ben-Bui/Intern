@@ -19,3 +19,4 @@
     </div>
 </nav>
 <button id="translateBtn" data-language="en">Tiếng Việt</button>
+<link rel="stylesheet" href="css/styles.css">

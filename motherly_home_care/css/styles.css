@@ -158,3 +158,9 @@ form button:hover {
         max-width: 95%;
     }
 }
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

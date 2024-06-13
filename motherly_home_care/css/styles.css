@@ -1,4 +1,4 @@
-/* CSS styles */
+/* Adjusted CSS styles for more compact layout */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,9 +6,11 @@ body {
     background-color: #2a0134; /* Very dark purple background */
     color: #fff; /* White text color */
 }
-h1, h2 {
-    color: #d4a3ff; /* Light purple for h1 and h2 */
+
+h1, h2, h3 {
+    color: #d4a3ff; /* Light purple for headings */
 }
+
 .hero {
     background-color: #2a0134; /* Very dark purple background */
     padding: 20px;
@@ -17,11 +19,11 @@ h1, h2 {
     border: 2px solid #6b3e8e; /* Light purple border */
     border-radius: 10px; /* Rounded corners */
 }
-/* Adjust h1 color to match the rest */
+
 .hero h1 {
     color: #d4a3ff; /* Dark purple color */
 }
-/* Footer styling */
+
 footer {
     background-color: #4b0082; /* Purple background */
     color: #fff; /* White text color */
@@ -29,112 +31,131 @@ footer {
     padding: 10px 0;
     width: 100%; /* Ensure footer takes full width */
 }
-.footer-content p {
-    margin: 5px 0;
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Full height to push the footer */
 }
+
 header {
     background-color: #4b0082; /* Dark purple color */
     padding: 10px 0;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-evenly; /* Space out items evenly */
-    align-items: center; /* Align items vertically center */
+    justify-content: space-around; /* Space out items evenly */
+    align-items: first baseline; /* Align items vertically center */
 }
+
 nav ul li {
     position: relative;
     margin: 0;
     padding: 0 15px;
 }
+
 nav ul li:not(:last-child)::after {
     content: "";
     position: absolute;
     right: 0;
     height: 100%;
 }
+
 nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     padding: 10px 0; /* Add padding to increase click area */
 }
+
 main {
-    padding: 20px;
+    padding-left: 100px; /* Reduce padding to make content more compact */
+    padding-right: 100px;
     text-align: center;
 }
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px; /* Reduce top margin */
 }
+
 form label {
-    margin-top: 10px;
+    margin-top: 5px; /* Reduce margin-top for labels */
     color: #6b3e8e; /* Dark purple color */
 }
+
 form input, form textarea {
     width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    margin-top: 5px;
+    max-width: 300px; /* Narrower input fields */
+    padding: 8px; /* Adjust padding */
+    margin-top: 3px; /* Reduce margin-top */
     border: 1px solid #4b0082; /* Dark purple color */
 }
+
 form button {
-    margin-top: 15px;
+    margin-top: 10px; /* Reduce margin-top for button */
     padding: 10px 20px;
     background-color: #4b0082; /* Dark purple color */
     color: white;
     border: none;
     cursor: pointer;
 }
+
 form button:hover {
     background-color: #3a0068; /* Darker purple color */
 }
+
 #translateBtn {
-    margin-top: 10px;
+    margin-top: 5px; /* Reduce margin-top */
     background-color: #4b0082; /* Dark purple color */
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
 }
+
 #translateBtn:hover {
     background-color: #3a0068; /* Darker purple color */
 }
+
 .contact-container {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 20px;
+    padding: 10px; /* Reduce padding */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
+
 .contact-info, .contact-form {
     width: 45%; /* Adjust the width as needed */
-    margin: 10px;
+    margin: 5px; /* Reduce margin */
 }
+
 .contact-info h2, .contact-form h2 {
     color: #6b3e8e; /* Dark purple color */
 }
+
 .contact-form label {
     display: block;
     text-align: left;
     width: 100%;
 }
+
 .contact-form input, .contact-form textarea {
     width: 100%;
 }
-label{
-    color: #6b3e8e; /* Light purple color for labels and h2 */
-}
-
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -161,9 +182,19 @@ label{
         max-width: 95%;
     }
 }
+ol {
+    text-align: left; /* Align list item numbers to the left */
+    padding-left: 0; /* Remove default padding */
+}
 
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ol li {
+    margin-bottom: 10px; /* Add space between list items */
+}
+ul {
+    text-align: left; /* Align list item numbers to the left */
+    padding-left: 0; /* Remove default padding */
+}
+
+ul li {
+    margin-bottom: 10px; /* Add space between list items */
 }

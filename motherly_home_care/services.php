@@ -27,7 +27,7 @@
                 <li>Meal preparation and planning is a must whne it comes to your health.</li>
 
                 <figure>
-                    <img class="picture" src="img/elder_care3.jpg" id="pic" alt="elder care" >
+                    <img class="picture" src="img/elder_care3.jpg" id="pic" alt="elder care" width="50%" >
                 </figure> 
                 <li>We provide care with the utmost respect and compassion.</li>
     </div>
@@ -42,7 +42,7 @@
                 <li>Giúp bạn vào nhà vệ sinh và thay quân áo.</li>
 
                 <figure>
-                    <img class="picture" src="img/medicine.jpg" id="pic" alt="medicine" >
+                    <img class="picture" src="img/medicine.jpeg" id="pic" alt="medicine" width="50%">
                 </figure> 
                 <li>Giúp bạn uống thuốc theo chỉ định của bác sĩ điều trị.</li>
 

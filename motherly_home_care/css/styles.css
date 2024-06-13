@@ -221,3 +221,43 @@ figcaption h1 {
     font-size: 3em; /* Adjust font size */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
 }
+.hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.picture {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline display */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%; /* Position in the center vertically */
+    left: 50%; /* Position in the center horizontally */
+    transform: translate(-50%, -50%);
+    width: 90%; /* Adjust width to fit smaller screens */
+    max-width: 600px; /* Limit maximum width */
+    padding: 0 20px; /* Add padding for better readability */
+    color: #fff; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+}
+
+.hero-content h1 {
+    font-size: 2.5em; /* Adjust font size */
+    margin-bottom: 10px; /* Add spacing below heading */
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        font-size: 1.2em; /* Further adjust font size for phones */
+    }
+}

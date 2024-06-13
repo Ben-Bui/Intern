@@ -32,6 +32,11 @@ footer {
 .footer-content p {
     margin: 5px 0;
 }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height to push the footer */
+}
 header {
     background-color: #4b0082; /* Dark purple color */
     padding: 10px 0;
@@ -131,31 +136,26 @@ label{
 }
 
 
+/* Responsive styles */
 @media (max-width: 768px) {
-    .hero {
-        max-width: 90%; /* Adjust width for tablets */
-    }
-    nav ul li {
-        margin: 5px 10px; /* Adjust margins for smaller screens */
-    }
     form input, form textarea {
         max-width: 90%; /* Adjust form width for tablets */
     }
 }
 
 @media (max-width: 480px) {
-    .hero {
-        max-width: 95%; /* Adjust width for phones */
-    }
     nav ul {
         flex-direction: column; /* Stack nav items vertically on phones */
     }
+
     nav ul li {
         margin: 10px 0; /* Adjust margins for vertical nav items */
     }
+
     form input, form textarea {
         max-width: 95%; /* Adjust form width for phones */
     }
+
     #translateBtn {
         width: 100%; /* Full-width button on phones */
         max-width: 95%;

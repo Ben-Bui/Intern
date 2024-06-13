@@ -7,7 +7,7 @@ body {
     color: #fff; /* White text color */
 }
 h1, h2 {
-    color: #6b3e8e; /* Light purple for h1 and h2 */
+    color: #d4a3ff; /* Light purple for h1 and h2 */
 }
 .hero {
     background-color: #2a0134; /* Very dark purple background */
@@ -19,7 +19,7 @@ h1, h2 {
 }
 /* Adjust h1 color to match the rest */
 .hero h1 {
-    color: #4b0082; /* Dark purple color */
+    color: #d4a3ff; /* Dark purple color */
 }
 /* Footer styling */
 footer {
@@ -27,6 +27,7 @@ footer {
     color: #fff; /* White text color */
     text-align: center;
     padding: 10px 0;
+    width: 100%; /* Ensure footer takes full width */
 }
 .footer-content p {
     margin: 5px 0;
@@ -53,7 +54,6 @@ nav ul li:not(:last-child)::after {
     position: absolute;
     right: 0;
     height: 100%;
-    border-right: 1px solid #fff; /* White line between items */
 }
 nav ul li a {
     text-decoration: none;
@@ -73,7 +73,7 @@ form {
 }
 form label {
     margin-top: 10px;
-    color: #4b0082; /* Dark purple color */
+    color: #6b3e8e; /* Dark purple color */
 }
 form input, form textarea {
     width: 100%;
@@ -116,7 +116,7 @@ form button:hover {
     margin: 10px;
 }
 .contact-info h2, .contact-form h2 {
-    color: #4b0082; /* Dark purple color */
+    color: #6b3e8e; /* Dark purple color */
 }
 .contact-form label {
     display: block;
@@ -125,6 +125,9 @@ form button:hover {
 }
 .contact-form input, .contact-form textarea {
     width: 100%;
+}
+label{
+    color: #6b3e8e; /* Light purple color for labels and h2 */
 }
 
 

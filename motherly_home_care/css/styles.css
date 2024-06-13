@@ -15,12 +15,12 @@ h1, h2, h3 {
     background-color: #2a0134; /* Very dark purple background */
     padding: 20px;
     margin: 20px auto;
-    max-width: 600px; /* Adjust as needed */
+    max-width: 700px; /* Adjust as needed */
     border: 2px solid #6b3e8e; /* Light purple border */
     border-radius: 10px; /* Rounded corners */
 }
 
-.hero h1 {
+.hero h1, h2 {
     color: #d4a3ff; /* Dark purple color */
 }
 
@@ -79,8 +79,8 @@ nav ul li a {
 }
 
 main {
-    padding-left: 100px; /* Reduce padding to make content more compact */
-    padding-right: 100px;
+    padding-left: 60px; /* Reduce padding to make content more compact */
+    padding-right: 60px;
     text-align: center;
 }
 
@@ -159,27 +159,26 @@ form button:hover {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    form input, form textarea {
-        max-width: 90%; /* Adjust form width for tablets */
+    figcaption h1 {
+        font-size: 2.5em; /* Adjusted font size for tablets and smaller screens */
     }
 }
 
 @media (max-width: 480px) {
-    nav ul {
-        flex-direction: column; /* Stack nav items vertically on phones */
+    figcaption h1 {
+        font-size: 2em; /* Further reduced font size for mobile phones */
     }
+}
 
-    nav ul li {
-        margin: 10px 0; /* Adjust margins for vertical nav items */
-    }
+#englishContent, #vietnameseContent {
+    padding: 20px;
+    text-align: center;
+}
 
-    form input, form textarea {
-        max-width: 95%; /* Adjust form width for phones */
-    }
-
-    #translateBtn {
-        width: 100%; /* Full-width button on phones */
-        max-width: 95%;
+/* Adjustments for smaller screens */
+@media (max-width: 480px) {
+    #englishContent, #vietnameseContent {
+        padding: 10px;
     }
 }
 ol {
@@ -232,32 +231,7 @@ figcaption h1 {
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove any default inline display */
 }
-
-.hero-content {
-    position: absolute;
-    top: 50%; /* Position in the center vertically */
-    left: 50%; /* Position in the center horizontally */
-    transform: translate(-50%, -50%);
-    width: 90%; /* Adjust width to fit smaller screens */
-    max-width: 600px; /* Limit maximum width */
-    padding: 0 20px; /* Add padding for better readability */
-    color: #fff; /* Text color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
-}
-
-.hero-content h1 {
-    font-size: 2.5em; /* Adjust font size */
-    margin-bottom: 10px; /* Add spacing below heading */
-}
-
-@media (max-width: 768px) {
-    .hero-content {
-        font-size: 1.5em; /* Adjust font size for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-content {
-        font-size: 1.2em; /* Further adjust font size for phones */
-    }
+.contact-info iframe {
+    max-width: 100%; /* Ensure the iframe stays within its container */
+    height: auto; /* Allow iframe height to adjust automatically */
 }

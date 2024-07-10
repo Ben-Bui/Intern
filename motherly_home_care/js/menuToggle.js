@@ -1,4 +1,4 @@
-document.getElementById('menuToggle').addEventListener('click', function() {
+document.getElementById('menuToggleBtn').addEventListener('click', function() {
     var navMenu = document.getElementById('navMenu');
-    navMenu.classList.toggle('active');
+    navMenu.classList.toggle('open');
 });

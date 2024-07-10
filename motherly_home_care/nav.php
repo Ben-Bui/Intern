@@ -22,7 +22,7 @@
                     <a href="about.php"> Về Chúng Tôi </a>
                     <a href="services.php"> Dịch Vụ </a>
                     <a href="contact.php"> Liên Hệ </a>
-                    <a href="apply.php"> Đăng Ký Dịch Vụ </a>
+                    <a href="apply.php">Đăng Ký Dịch Vụ </a>
                 </li>
             </ul>
             <button id="translateBtn" data-language="en">Tiếng Việt</button>

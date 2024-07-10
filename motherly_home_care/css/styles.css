@@ -49,36 +49,69 @@ header {
     padding: 10px 0;
 }
 
-nav ul {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#navMenu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-nav ul li {
-    margin: 0;
-    padding: 0 15px;
-}
-
-nav ul li a {
+#navMenu li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    padding: 10px 20px; /* Add padding for button-like appearance */
-    background-color: #4b0082; /* Button background color */
-    border: 2px solid #6b3e8e; /* Border color */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    padding: 10px 20px;
+    background-color: #6b3e8e;
+    border-radius: 5px;
+    margin: 5px;
+    display: block;
 }
 
-nav ul li a:hover {
-    background-color: #3a0068; /* Darker background on hover */
-    color: #d4a3ff; /* Lighter text color on hover */
+#navMenu li a:hover {
+    background-color: #3a0068;
 }
 
+#translateBtn, #menuToggle {
+    background-color: #4b0082;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#translateBtn:hover, #menuToggle:hover {
+    background-color: #3a0068;
+}
+
+#menuToggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menuToggle {
+        display: block;
+    }
+
+    #navMenu.active {
+        display: flex;
+    }
+}
 
 main {
     /* padding-left: 60px; /* Reduce padding to make content more compact */
@@ -119,18 +152,6 @@ form button:hover {
     background-color: #3a0068; /* Darker purple color */
 }
 
-#translateBtn {
-    margin-top: 5px; /* Reduce margin-top */
-    background-color: #4b0082; /* Dark purple color */
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-#translateBtn:hover {
-    background-color: #3a0068; /* Darker purple color */
-}
 
 .contact-container {
     display: flex;

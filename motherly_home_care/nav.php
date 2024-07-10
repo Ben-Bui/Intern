@@ -25,6 +25,7 @@
                     <a href="apply.php">Đăng Ký Dịch Vụ</a>
                 </li>
             </ul>
+            <button id="menuToggle" aria-label="Toggle menu">☰</button>
             <button id="translateBtn" data-language="en">Tiếng Việt</button>
         </nav>
     </header>

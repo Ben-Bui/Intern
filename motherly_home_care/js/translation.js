@@ -1,43 +1,28 @@
-document.getElementById('translateBtn').addEventListener('click', function() {
-    const englishContent = document.getElementById('englishContent');
-    const vietnameseContent = document.getElementById('vietnameseContent');
-    const englishContentFooter = document.getElementById('englishContentFooter');
-    const vietnameseContentFooter = document.getElementById('vietnameseContentFooter');
-    const englishNav = document.getElementById('englishNav');
-    const vietnameseNav = document.getElementById('vietnameseNav');
+// js/hide.js
 
-    // Toggle main content
-    toggleContent(englishContent);
-    toggleContent(vietnameseContent);
-
-    // Toggle footer content
-    toggleContent(englishContentFooter);
-    toggleContent(vietnameseContentFooter);
-
-    // Toggle nav content
-    toggleContent(englishNav);
-    toggleContent(vietnameseNav);
-
-    // Toggle button text
-    this.textContent = (this.textContent === 'Tiếng Việt') ? 'English' : 'Tiếng Việt';
-    
-    // Toggle service-specific content
-    toggleServiceContent();
+document.getElementById('translateBtn').addEventListener('click', function () {
+    toggleLanguage();
 });
 
-function toggleContent(element) {
-    if (element.style.display === 'block' || element.style.display === '') {
-        element.style.display = 'none';
+document.getElementById('translateBtnDrawer').addEventListener('click', function () {
+    toggleLanguage();
+});
+
+function toggleLanguage() {
+    var englishNav = document.getElementById('englishContentNav');
+    var vietnameseNav = document.getElementById('vietnameseContentNav');
+    var translateBtn = document.getElementById('translateBtn');
+    var translateBtnDrawer = document.getElementById('translateBtnDrawer');
+
+    if (englishNav.style.display === 'none') {
+        englishNav.style.display = 'block';
+        vietnameseNav.style.display = 'none';
+        translateBtn.innerText = 'Tiếng Việt';
+        translateBtnDrawer.innerText = 'Tiếng Việt';
     } else {
-        element.style.display = 'block';
+        englishNav.style.display = 'none';
+        vietnameseNav.style.display = 'block';
+        translateBtn.innerText = 'English';
+        translateBtnDrawer.innerText = 'English';
     }
-}
-
-
-function toggleServiceContent() {
-    const englishServiceContent = document.getElementById('englishServiceContent');
-    const vietnameseServiceContent = document.getElementById('vietnameseServiceContent');
-
-    toggleContent(englishServiceContent);
-    toggleContent(vietnameseServiceContent);
 }

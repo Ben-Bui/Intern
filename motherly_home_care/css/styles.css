@@ -1,85 +1,67 @@
+/* Basic styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white; /* Very dark purple background */
-    color: black; /* White text color */
+    background-color: white;
+    color: black;
     font-size: 20px;
 }
 
-h1, h2, h3 {
-    color: #d4a3ff; /* Light purple for headings */
-}
-
-.hero {
-    background-color: #2a0134; /* Very dark purple background */
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 700px; /* Adjust as needed */
-    border: 2px solid #6b3e8e; /* Light purple border */
-    border-radius: 10px; /* Rounded corners */
-}
-
-.hero h1, h2 {
-    color: #d4a3ff; /* Dark purple color */
-}
-
-footer {
-    background-color: #4b0082; /* Purple background */
-    color: #fff; /* White text color */
-    text-align: center;
+header {
+    background-color: #4b0082; /* Dark purple color */
     padding: 10px 0;
-    width: 100%; /* Ensure footer takes full width */
 }
 
-.footer-content {
+nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center the nav contents horizontally */
+    align-items: center; /* Center items vertically */
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Full height to push the footer */
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.nav-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center align nav-container */
 }
 
-nav ul li {
-    margin: 0;
-    padding: 0 15px;
-}
-
-nav ul li.logo {
+.logo {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-    margin-right: auto;
+    margin-right: auto; /* Push logo to the far left */
 }
 
-.navItems {
+#navMenu {
+    display: flex;
+    justify-content: center; /* Center align the menu items */
+    flex-grow: 1; /* Allow the menu to take up available space */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navMenu .navItems {
     display: flex;
     justify-content: center;
-    flex: 1;
+    flex-grow: 1;
 }
 
-nav ul li a {
+#navMenu li {
+    margin: 0 10px; /* Space between menu items */
+}
+
+#navMenu li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    padding: 10px 0; /* Add padding to increase click area */
+    padding: 10px 15px; /* Add padding to increase click area */
 }
 
 #translateBtn {
-    margin-top: 5px; /* Reduce margin-top */
+    margin: 0 10px; /* Add margin to separate from menu */
     background-color: #4b0082; /* Dark purple color */
     color: white;
     border: none;
@@ -91,255 +73,93 @@ nav ul li a {
     background-color: #3a0068; /* Darker purple color */
 }
 
-/* Ensure that the nav items are centered */
-header {
-    background-color: #4b0082; /* Dark purple color */
-    padding: 10px 0;
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    display: none; /* Hide hamburger menu by default */
 }
 
-main {
-    /* padding-left: 60px; /* Reduce padding to make content more compact */
-    /* padding-right: 60px; */
+/* Drawer styles */
+.drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4b0082; /* Purple background */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.drawer.open {
+    width: 250px;
+}
+
+.drawer .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.drawer-content {
+    padding: 8px;
     text-align: center;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px; /* Reduce top margin */
-}
-
-form label {
-    margin-top: 5px; /* Reduce margin-top for labels */
-    color: #6b3e8e; /* Dark purple color */
-}
-
-form input, form textarea {
-    width: 100%;
-    max-width: 300px; /* Narrower input fields */
-    padding: 8px; /* Adjust padding */
-    margin-top: 3px; /* Reduce margin-top */
-    border: 1px solid #4b0082; /* Dark purple color */
-}
-
-form button {
-    margin-top: 10px; /* Reduce margin-top for button */
-    padding: 10px 20px;
-    background-color: #4b0082; /* Dark purple color */
+.drawer-content button {
+    background-color: #4b0082; /* Match the side drawer background color */
     color: white;
     border: none;
+    padding: 10px;
     cursor: pointer;
+    display: block;
+    margin: 10px auto; /* Center the button */
 }
 
-form button:hover {
+.drawer-content button:hover {
     background-color: #3a0068; /* Darker purple color */
 }
 
-.contact-container {
-    display: flex;
-    flex-direction: column; /* Display items in a column */
-    align-items: center; /* Center align items horizontally */
-    padding: 10px; /* Reduce padding */
+.drawer-content ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.contact-info, .contact-form {
-    width: 100%; /* Take full width */
-    max-width: 600px; /* Limit maximum width */
-    margin: 10px 0; /* Add margin for spacing */
+.drawer-content ul li {
+    padding: 8px 0;
 }
 
-.contact-info {
-    order: 1; /* Ensure the map comes before the form */
-}
-
-.contact-form {
-    order: 2; /* Ensure the form comes after the map */
-}
-
-.contact-info iframe {
-    width: 100%; /* Ensure iframe fills its container */
-    height: 300px; /* Fixed height for the map */
-    max-width: 100%; /* Responsive max-width */
-}
-
-.contact-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px; /* Reduce padding */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-}
-
-.contact-info, .contact-form {
-    width: 45%; /* Adjust the width as needed */
-    margin: 5px; /* Reduce margin */
-}
-
-.contact-info h2, .contact-form h2 {
-    color: #6b3e8e; /* Dark purple color */
-}
-
-.contact-form label {
-    display: block;
-    text-align: left;
-    width: 100%;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
+.drawer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    figcaption h1 {
-        font-size: 2.5em; /* Adjusted font size for tablets and smaller screens */
+    .hamburger {
+        display: block; /* Show hamburger menu on smaller screens */
+    }
+    
+    #navMenu {
+        display: none; /* Hide the nav menu on smaller screens */
     }
 }
 
 @media (max-width: 480px) {
-    figcaption h1 {
-        font-size: 2em; /* Further reduced font size for mobile phones */
-    }
-}
-
-#englishContent, #vietnameseContent {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 480px) {
-    #englishContent, #vietnameseContent {
-        padding: 10px;
-    }
-}
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.hamburger-menu {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #fff;
-}
-
-@media (max-width: 768px) {
-    .nav-items {
-        display: none;
-        flex-direction: column;
-        background-color: #4b0082;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
+    #navMenu {
+        display: none; /* Hide the nav menu on very small screens */
     }
 
-    .nav-items.active {
-        display: flex;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
-    .nav-items li {
-        padding: 10px 0;
-        text-align: center;
-    }
-
-    .nav-items li a {
-        padding: 10px;
-    }
-}
-ol {
-    text-align: left; /* Align list item numbers to the left */
-    padding-left: 0; /* Remove default padding */
-}
-
-ol li {
-    margin-bottom: 10px; /* Add space between list items */
-}
-ul {
-    text-align: left; /* Align list item numbers to the left */
-    padding-left: 0; /* Remove default padding */
-}
-
-ul li {
-    margin-bottom: 10px; /* Add space between list items */
-}
-.hero {
-    position: relative;
-    text-align: center; /* Center align the content */
-}
-
-.picture {
-    width: 100%; /* Ensure the image fills its container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any default inline display */
-}
-
-figcaption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff; /* Text color */
-}
-
-figcaption h1 {
-    font-size: 3em; /* Adjust font size */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
-}
-.hero {
-    position: relative;
-    text-align: center;
-    overflow: hidden; /* Hide overflowing content */
-}
-
-.picture {
-    width: 100%; /* Ensure the image fills its container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any default inline display */
-}
-.contact-info iframe {
-    max-width: 100%; /* Ensure the iframe stays within its container */
-    height: auto; /* Allow iframe height to adjust automatically */
-}
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.service-item {
-    background-color: #f8f8f8;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    color: #333;
-}
-
-.service-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-    .services-grid {
-        grid-template-columns: 1fr;
+    .drawer.open {
+        width: 100%; /* Full width on very small screens */
     }
 }

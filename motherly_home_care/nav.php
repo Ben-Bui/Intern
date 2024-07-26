@@ -8,18 +8,18 @@
 </head>
 <body>
     <header>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">MHC</div>
-                <ul id="navMenu" class="nav-items">
-                    <li id="englishContentNav">
+        <nav>
+            <div class="nav-container">
+                <div class="logo">MHC</div>
+                <ul id="navMenu">
+                    <li id="englishContentNav" class="navItems">
                         <a href="index.php">| Home </a>
                         <a href="about.php">| About </a>
                         <a href="services.php">| Services </a>
                         <a href="contact.php">| Contact Us </a>
                         <a href="apply.php">| Apply for Service |</a>
                     </li>
-                    <li id="vietnameseContentNav" style="display: none;">
+                    <li id="vietnameseContentNav" class="navItems" style="display: none;">
                         <a href="index.php">| Trang Chủ </a>
                         <a href="about.php">| Về Chúng Tôi </a>
                         <a href="services.php">| Dịch Vụ </a>
@@ -27,15 +27,25 @@
                         <a href="apply.php">| Đăng Ký Dịch Vụ |</a>
                     </li>
                     <li><button id="translateBtn" data-language="en">Tiếng Việt</button></li>
-            </ul>
-                <div class="hamburger-menu" id="hamburgerMenu">
-                    &#9776;
-                </div>
+                </ul>
+                <button class="hamburger" onclick="toggleDrawer()">&#9776;</button>
             </div>
         </nav>
     </header>
-<script src="js/hide.js"></script>
-<script src="js/menuToggle.js"></script>
-<script src="js/mobileMenu.js"></script>
+        <div id="sideDrawer" class="drawer">
+            <button class="closebtn" onclick="toggleDrawer()">&times;</button>
+            <div class="drawer-content">
+                <button id="translateBtnDrawer" data-language="en">Tiếng Việt</button>
+                <ul id="drawerMenu">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="apply.php">Apply for Service</a></li>
+                </ul>
+            </div>
+        </div>
+    <script src="js/hide.js"></script>
+    <script src="js/menuToggle.js"></script>
 </body>
 </html>

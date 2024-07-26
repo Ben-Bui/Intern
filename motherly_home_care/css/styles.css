@@ -44,31 +44,31 @@ footer {
     min-height: 100vh; /* Full height to push the footer */
 }
 
-header {
-    background-color: #4b0082; /* Dark purple color */
-    padding: 10px 0;
-}
-
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around; /* Space out items evenly */
-    align-items: first baseline; /* Align items vertically center */
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav ul li {
-    position: relative;
     margin: 0;
     padding: 0 15px;
 }
 
-nav ul li:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    height: 100%;
+nav ul li.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: auto;
+}
+
+.navItems {
+    display: flex;
+    justify-content: center;
+    flex: 1;
 }
 
 nav ul li a {
@@ -77,6 +77,7 @@ nav ul li a {
     font-weight: bold;
     padding: 10px 0; /* Add padding to increase click area */
 }
+
 #translateBtn {
     margin-top: 5px; /* Reduce margin-top */
     background-color: #4b0082; /* Dark purple color */
@@ -88,6 +89,12 @@ nav ul li a {
 
 #translateBtn:hover {
     background-color: #3a0068; /* Darker purple color */
+}
+
+/* Ensure that the nav items are centered */
+header {
+    background-color: #4b0082; /* Dark purple color */
+    padding: 10px 0;
 }
 
 main {
@@ -129,11 +136,37 @@ form button:hover {
     background-color: #3a0068; /* Darker purple color */
 }
 
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+    align-items: center; /* Center align items horizontally */
+    padding: 10px; /* Reduce padding */
+}
+
+.contact-info, .contact-form {
+    width: 100%; /* Take full width */
+    max-width: 600px; /* Limit maximum width */
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.contact-info {
+    order: 1; /* Ensure the map comes before the form */
+}
+
+.contact-form {
+    order: 2; /* Ensure the form comes after the map */
+}
+
+.contact-info iframe {
+    width: 100%; /* Ensure iframe fills its container */
+    height: 300px; /* Fixed height for the map */
+    max-width: 100%; /* Responsive max-width */
+}
 
 .contact-container {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     padding: 10px; /* Reduce padding */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
@@ -178,6 +211,54 @@ form button:hover {
 /* Adjustments for smaller screens */
 @media (max-width: 480px) {
     #englishContent, #vietnameseContent {
+        padding: 10px;
+    }
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        background-color: #4b0082;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-items.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-items li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-items li a {
         padding: 10px;
     }
 }

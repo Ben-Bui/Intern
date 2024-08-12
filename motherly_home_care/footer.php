@@ -11,4 +11,27 @@
             <p>Email: <a href="mailto:Motherly969@gmail.com" style="color: white;">Motherly969@gmail.com</a></p>
         </div>
     </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Designed and Developed by <strong>Ben The Bui</strong>. All Rights Reserved.</p>
+    </div>
 </footer>
+
+<script>
+    // Automatically update the year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<style>
+    .footer-content {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+    }
+    .footer-bottom {
+        background-color: #222;
+        padding: 10px;
+        color: #ccc;
+        text-align: center;
+    }
+</style>

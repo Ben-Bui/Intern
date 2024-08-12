@@ -32,5 +32,15 @@
     </header>
     <script src="js/hide.js"></script>
     <script src="js/menuToggle.js"></script>
+    <!-- Floating contact icons -->
+<div class="floating-icons">
+    <a href="mailto:Motherly969@gmail.com" class="icon" title="Email">
+        <img src="img/email-icon.png" alt="Email">
+    </a>
+    <a href="tel:+12677389969" class="icon" title="Phone">
+        <img src="img/phone-icon.png" alt="Phone">
+    </a>
+</div>
+
 </body>
 </html>
